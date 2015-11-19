@@ -1,0 +1,185 @@
+/* =============================================================================
+  HTML5 element display
+========================================================================== */
+article, aside, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+  Reset
+========================================================================== */
+html, body {
+	height: 100%; 
+	width: 100%;
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
+	background-color: beige;
+}
+
+body, html, div, p, span, 
+h1, h2, h3, h4, h5,
+table, td, tr, th, 
+ul, ol, li, dl, dt, dd, 
+form, input, fieldset, label, legend, select, textarea,
+a, img, pre{
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+/* =======================================
+  Font
+======================================= */
+
+
+/*@font-face {
+	font-family: 'dinregular';
+	src: url('../fonts/dinregular/dinregular-webfont.eot');
+	src: url('../fonts/dinregular/dinregular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/dinregular/dinregular-webfont.woff') format('woff'),
+		 url('../fonts/dinregular/dinregular-webfont.ttf') format('truetype'),
+		 url('../fonts/dinregular/dinregular-webfont.svg#dinregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.wrapper {
+  width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+
+/*   HEADER   */
+.square {
+  width: 20%;
+  position: absolute;
+  top: 5px;
+  right: 0;
+
+  font-size: 12px;
+  border: 4px double black;
+}
+
+/*end of header*/
+
+
+/*    POST INFO     */
+.main-content h1 {
+  font-size: 95px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.post-info {
+  width: 100%;
+  display: table;
+  border-collapse: separate;
+
+  margin-top: 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+.post-info div{
+  display: table-cell;
+  width: 25%;
+  margin: 20px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  border-top: 4px double black;
+  border-bottom: 4px solid black
+}
+
+.post-info div:nth-child(1) {
+  text-align: left;
+}
+
+
+.post-info div:nth-child(2) {
+  width: 50%;
+}
+
+.post-info div:nth-child(3) {
+  text-align: right;
+}
+
+/* end of post info*/
+
+/*    ARTICLES     */
+
+.articles > h3 {
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.articles {
+  display: table;
+  /*border-spacing: 5px;*/
+  border-collapse: separate;
+}
+
+.articles article {
+  width: 20%;
+  display: table-cell;
+  vertical-align: top;
+
+  padding: 5px 15px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  text-align: justify;
+  border-left: 1px solid black;
+}
+
+.articles article:first-child {
+  padding-left: 0;
+}
+
+.articles article:first-child,
+.articles article:last-child {
+  border: none;
+}
+
+.articles .image-box {
+  width: 40%;
+  display: table-cell;
+}
+
+.articles .image-box img {
+  width: 100%;
+}
+
+/*    END OF ARTICLES    */
+
